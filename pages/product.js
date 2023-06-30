@@ -25,7 +25,7 @@ const Product = ({ProductData}) => {
         <section className="text-gray-600 body-font">
           <div className="container px-1 py-4 mx-auto overflow-hidden">
             <FilterBar />
-            {ProductData.length !== 0 ?
+            {ProductData && ProductData.length !== 0 ?
               <div className="flex flex-wrap -m-4 justify-center">
                 {ProductData.slice(0, page * 30).map((i) => (
                   <div className="p-4 w-64 shadow-lg m-4" key={i.id}>

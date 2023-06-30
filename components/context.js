@@ -234,12 +234,12 @@ const Context = ({ children }) => {
     let OrderAds = state.address.filter((i) => {
       return i.Default === true;
     });
-    // console.log(OrderAds);
+    console.log(typeof OrderAds);
     let OrderItem = {
       Order_id: e.razorpay_order_id,
       Payment_id: e.razorpay_payment_id,
       Order_Date: Date.now(),
-      Order_address: OrderAds,
+      Order_address: OrderAds[0],
       Order_amount: state.Sub_Total,
       fee: state.shipFee,
       item: [...state.Cart],

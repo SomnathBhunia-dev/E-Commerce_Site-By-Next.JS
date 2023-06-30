@@ -14,7 +14,7 @@ const RecentOrder = () => {
             </svg>
             <h1 className="text-3xl font-bold">Order Placed Successfully!</h1>
           </div>
-          <OrderDetail RecentOrder={RecentOrder} />
+          {RecentOrder && <OrderDetail RecentOrder={RecentOrder} />}
         </div>
         <Link href="/menu"><button className='m-4 text-white bg-indigo-500 border-0 py-1 px-4 md:py-2 md:px-6 focus:outline-none hover:bg-indigo-600 rounded'>Continue Shopping</button>
         </Link>

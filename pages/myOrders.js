@@ -41,12 +41,12 @@ const MyOrders = () => {
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 inline-block">
                             <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
                           </svg>
-                        </span> <p className="cursor-pointer text-[#007185]">{i.Order_address[0].firstName} </p>
+                        </span> <p className="cursor-pointer text-[#007185]">{i.Order_address.firstName} </p>
                         <div className="absolute top-12 z-[1000] hidden float-left m-0 p-4 min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 group-hover:block" >
-                          <span className="font-bold text-gray-800"> {i.Order_address[0].firstName} {i.Order_address[0].lastName} </span>
+                          <span className="font-bold text-gray-800"> {i.Order_address.firstName} {i.Order_address.lastName} </span>
                           <div className="text-gray-600 mb-1">
-                            <p>{i.Order_address[0].road}</p>
-                            <p> {i.Order_address[0].District}, {i.Order_address[0].State} - {i.Order_address[0].Pin}</p>
+                            <p>{i.Order_address.road}</p>
+                            <p> {i.Order_address.District}, {i.Order_address.State} - {i.Order_address.Pin}</p>
                           </div>
                         </div>
                       </div>
