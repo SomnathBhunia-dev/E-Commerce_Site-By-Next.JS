@@ -15,7 +15,7 @@ const Filter = () => {
     const colorBtn = useRef()
     return (
         <>
-            <div className="max-lg:p-2 sticky top-[12.8rem]">
+            <div className="max-lg:p-2 sticky lg:top-[12.8rem]">
                 <h3 className="sr-only">Categories</h3>
 
                 <div className="flex flex-col items-center">

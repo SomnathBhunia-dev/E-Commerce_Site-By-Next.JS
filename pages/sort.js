@@ -27,7 +27,7 @@ const Sort = () => {
                 <div className="relative z-40 lg:hidden" role="dialog" aria-modal="true">
                     <div className={`fixed inset-0 bg-black ${close ? 'bg-opacity-[-1] hidden' : 'bg-opacity-25'}`}></div>
                     <div className={`fixed inset-0 ${close ? 'z-[-1] hidden' : 'z-40 flex'}`} >
-                        <div className="relative ml-auto h-full w-3/4 max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl hidden" ref={sideBtn}>
+                        <div className="relative top-20 ml-auto h-full w-3/4 max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl hidden" ref={sideBtn}>
                             <div className="flex items-center justify-between px-4">
                                 <h2 className="text-lg font-medium text-gray-900">Filters</h2>
                                 <button onClick={() => { toggleCart(sideBtn); setclose(true) }} type="button" className="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400">
